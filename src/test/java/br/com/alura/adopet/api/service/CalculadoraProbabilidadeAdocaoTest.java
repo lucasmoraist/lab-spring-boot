@@ -75,7 +75,8 @@ class CalculadoraProbabilidadeAdocaoTest {
 
         // Verificando se o valor que está vindo da calculadora é ALTO
         // Primeiro parâmetro é oque esperamos e o segundo é oque recebemos de resultado
-        // Para forçar um erro eu posso alterar a probabilidade que irá retornar lá na classe da calculadora
+        // Para forçar um erro eu posso alterar a probabilidade que irá retornar lá na classe da calculadora,
+        // isso é conhecido como mutações. Mutações são quando forçamos o código para ele dar erro.
         // ASSERT
         Assertions.assertEquals(ProbabilidadeAdocao.ALTA, probabilidade);
     }
