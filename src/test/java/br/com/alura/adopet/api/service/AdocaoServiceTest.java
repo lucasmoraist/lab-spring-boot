@@ -1,5 +1,6 @@
 package br.com.alura.adopet.api.service;
 
+import br.com.alura.adopet.api.dto.AprovacaoAdocaoDto;
 import br.com.alura.adopet.api.dto.SolicitacaoAdocaoDto;
 import br.com.alura.adopet.api.model.Abrigo;
 import br.com.alura.adopet.api.model.Adocao;
@@ -25,13 +26,14 @@ class AdocaoServiceTest {
 
     @InjectMocks
     private AdocaoService service;
-
     @Mock
     private AdocaoRepository repository;
-
+    @Mock
+    private Adocao adocao;
     @Mock
     private PetRepository petRepository;
-
+    @Mock
+    private AprovacaoAdocaoDto aprovacaoAdocaoDto;
     @Mock
     private TutorRepository tutorRepository;
 
